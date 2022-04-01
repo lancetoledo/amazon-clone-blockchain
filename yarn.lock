@@ -873,10 +873,10 @@
   resolved "https://registry.yarnpkg.com/@metamask/safe-event-emitter/-/safe-event-emitter-2.0.0.tgz#af577b477c683fad17c619a78208cede06f9605c"
   integrity sha512-/kSXhY692qiV1MXu6EeOZvg5nECLclxNXcKCxJ3cXQgYuRymRHpdx/t7JXfsK+JLjwA1e1c1/SBrlQYpusC29Q==
 
-"@next/env@12.1.4":
-  version "12.1.4"
-  resolved "https://registry.yarnpkg.com/@next/env/-/env-12.1.4.tgz#5af629b43075281ecd7f87938802b7cf5b67e94b"
-  integrity sha512-7gQwotJDKnfMxxXd8xJ2vsX5AzyDxO3zou0+QOXX8/unypA6icw5+wf6A62yKZ6qQ4UZHHxS68pb6UV+wNneXg==
+"@next/env@12.1.0":
+  version "12.1.0"
+  resolved "https://registry.yarnpkg.com/@next/env/-/env-12.1.0.tgz#73713399399b34aa5a01771fb73272b55b22c314"
+  integrity sha512-nrIgY6t17FQ9xxwH3jj0a6EOiQ/WDHUos35Hghtr+SWN/ntHIQ7UpuvSi0vaLzZVHQWaDupKI+liO5vANcDeTQ==
 
 "@next/eslint-plugin-next@12.1.4":
   version "12.1.4"
@@ -885,65 +885,60 @@
   dependencies:
     glob "7.1.7"
 
-"@next/swc-android-arm-eabi@12.1.4":
-  version "12.1.4"
-  resolved "https://registry.yarnpkg.com/@next/swc-android-arm-eabi/-/swc-android-arm-eabi-12.1.4.tgz#c3dae178b7c15ad627d2e9b8dfb38caecb5c4ac7"
-  integrity sha512-FJg/6a3s2YrUaqZ+/DJZzeZqfxbbWrynQMT1C5wlIEq9aDLXCFpPM/PiOyJh0ahxc0XPmi6uo38Poq+GJTuKWw==
+"@next/swc-android-arm64@12.1.0":
+  version "12.1.0"
+  resolved "https://registry.yarnpkg.com/@next/swc-android-arm64/-/swc-android-arm64-12.1.0.tgz#865ba3a9afc204ff2bdeea49dd64d58705007a39"
+  integrity sha512-/280MLdZe0W03stA69iL+v6I+J1ascrQ6FrXBlXGCsGzrfMaGr7fskMa0T5AhQIVQD4nA/46QQWxG//DYuFBcA==
 
-"@next/swc-android-arm64@12.1.4":
-  version "12.1.4"
-  resolved "https://registry.yarnpkg.com/@next/swc-android-arm64/-/swc-android-arm64-12.1.4.tgz#f320d60639e19ecffa1f9034829f2d95502a9a51"
-  integrity sha512-LXraazvQQFBgxIg3Htny6G5V5he9EK7oS4jWtMdTGIikmD/OGByOv8ZjLuVLZLtVm3UIvaAiGtlQSLecxJoJDw==
+"@next/swc-darwin-arm64@12.1.0":
+  version "12.1.0"
+  resolved "https://registry.yarnpkg.com/@next/swc-darwin-arm64/-/swc-darwin-arm64-12.1.0.tgz#08e8b411b8accd095009ed12efbc2f1d4d547135"
+  integrity sha512-R8vcXE2/iONJ1Unf5Ptqjk6LRW3bggH+8drNkkzH4FLEQkHtELhvcmJwkXcuipyQCsIakldAXhRbZmm3YN1vXg==
 
-"@next/swc-darwin-arm64@12.1.4":
-  version "12.1.4"
-  resolved "https://registry.yarnpkg.com/@next/swc-darwin-arm64/-/swc-darwin-arm64-12.1.4.tgz#fd578278312613eddcf3aee26910100509941b63"
-  integrity sha512-SSST/dBymecllZxcqTCcSTCu5o1NKk9I+xcvhn/O9nH6GWjgvGgGkNqLbCarCa0jJ1ukvlBA138FagyrmZ/4rQ==
+"@next/swc-darwin-x64@12.1.0":
+  version "12.1.0"
+  resolved "https://registry.yarnpkg.com/@next/swc-darwin-x64/-/swc-darwin-x64-12.1.0.tgz#fcd684497a76e8feaca88db3c394480ff0b007cd"
+  integrity sha512-ieAz0/J0PhmbZBB8+EA/JGdhRHBogF8BWaeqR7hwveb6SYEIJaDNQy0I+ZN8gF8hLj63bEDxJAs/cEhdnTq+ug==
 
-"@next/swc-darwin-x64@12.1.4":
-  version "12.1.4"
-  resolved "https://registry.yarnpkg.com/@next/swc-darwin-x64/-/swc-darwin-x64-12.1.4.tgz#ace5f80d8c8348efe194f6d7074c6213c52b3944"
-  integrity sha512-p1lwdX0TVjaoDXQVuAkjtxVBbCL/urgxiMCBwuPDO7TikpXtSRivi+mIzBj5q7ypgICFmIAOW3TyupXeoPRAnA==
+"@next/swc-linux-arm-gnueabihf@12.1.0":
+  version "12.1.0"
+  resolved "https://registry.yarnpkg.com/@next/swc-linux-arm-gnueabihf/-/swc-linux-arm-gnueabihf-12.1.0.tgz#9ec6380a27938a5799aaa6035c205b3c478468a7"
+  integrity sha512-njUd9hpl6o6A5d08dC0cKAgXKCzm5fFtgGe6i0eko8IAdtAPbtHxtpre3VeSxdZvuGFh+hb0REySQP9T1ttkog==
 
-"@next/swc-linux-arm-gnueabihf@12.1.4":
-  version "12.1.4"
-  resolved "https://registry.yarnpkg.com/@next/swc-linux-arm-gnueabihf/-/swc-linux-arm-gnueabihf-12.1.4.tgz#2bf2c83863635f19c71c226a2df936e001cce29c"
-  integrity sha512-67PZlgkCn3TDxacdVft0xqDCL7Io1/C4xbAs0+oSQ0xzp6OzN2RNpuKjHJrJgKd0DsE1XZ9sCP27Qv0591yfyg==
+"@next/swc-linux-arm64-gnu@12.1.0":
+  version "12.1.0"
+  resolved "https://registry.yarnpkg.com/@next/swc-linux-arm64-gnu/-/swc-linux-arm64-gnu-12.1.0.tgz#7f4196dff1049cea479607c75b81033ae2dbd093"
+  integrity sha512-OqangJLkRxVxMhDtcb7Qn1xjzFA3s50EIxY7mljbSCLybU+sByPaWAHY4px97ieOlr2y4S0xdPKkQ3BCAwyo6Q==
 
-"@next/swc-linux-arm64-gnu@12.1.4":
-  version "12.1.4"
-  resolved "https://registry.yarnpkg.com/@next/swc-linux-arm64-gnu/-/swc-linux-arm64-gnu-12.1.4.tgz#d577190f641c9b4b463719dd6b8953b6ba9be8d9"
-  integrity sha512-OnOWixhhw7aU22TQdQLYrgpgFq0oA1wGgnjAiHJ+St7MLj82KTDyM9UcymAMbGYy6nG/TFOOHdTmRMtCRNOw0g==
+"@next/swc-linux-arm64-musl@12.1.0":
+  version "12.1.0"
+  resolved "https://registry.yarnpkg.com/@next/swc-linux-arm64-musl/-/swc-linux-arm64-musl-12.1.0.tgz#b445f767569cdc2dddee785ca495e1a88c025566"
+  integrity sha512-hB8cLSt4GdmOpcwRe2UzI5UWn6HHO/vLkr5OTuNvCJ5xGDwpPXelVkYW/0+C3g5axbDW2Tym4S+MQCkkH9QfWA==
 
-"@next/swc-linux-arm64-musl@12.1.4":
-  version "12.1.4"
-  resolved "https://registry.yarnpkg.com/@next/swc-linux-arm64-musl/-/swc-linux-arm64-musl-12.1.4.tgz#e70ffe70393d8f9242deecdb282ce5a8fd588b14"
-  integrity sha512-UoRMzPZnsAavdWtVylYxH8DNC7Uy0i6RrvNwT4PyQVdfANBn2omsUkcH5lgS2O7oaz0nAYLk1vqyZDO7+tJotA==
+"@next/swc-linux-x64-gnu@12.1.0":
+  version "12.1.0"
+  resolved "https://registry.yarnpkg.com/@next/swc-linux-x64-gnu/-/swc-linux-x64-gnu-12.1.0.tgz#67610e9be4fbc987de7535f1bcb17e45fe12f90e"
+  integrity sha512-OKO4R/digvrVuweSw/uBM4nSdyzsBV5EwkUeeG4KVpkIZEe64ZwRpnFB65bC6hGwxIBnTv5NMSnJ+0K/WmG78A==
 
-"@next/swc-linux-x64-gnu@12.1.4":
-  version "12.1.4"
-  resolved "https://registry.yarnpkg.com/@next/swc-linux-x64-gnu/-/swc-linux-x64-gnu-12.1.4.tgz#91498a130387fb1961902f2bee55863f8e910cff"
-  integrity sha512-nM+MA/frxlTLUKLJKorctdI20/ugfHRjVEEkcLp/58LGG7slNaP1E5d5dRA1yX6ISjPcQAkywas5VlGCg+uTvA==
+"@next/swc-linux-x64-musl@12.1.0":
+  version "12.1.0"
+  resolved "https://registry.yarnpkg.com/@next/swc-linux-x64-musl/-/swc-linux-x64-musl-12.1.0.tgz#ea19a23db08a9f2e34ac30401f774cf7d1669d31"
+  integrity sha512-JohhgAHZvOD3rQY7tlp7NlmvtvYHBYgY0x5ZCecUT6eCCcl9lv6iV3nfu82ErkxNk1H893fqH0FUpznZ/H3pSw==
 
-"@next/swc-linux-x64-musl@12.1.4":
-  version "12.1.4"
-  resolved "https://registry.yarnpkg.com/@next/swc-linux-x64-musl/-/swc-linux-x64-musl-12.1.4.tgz#78057b03c148c121553d41521ad38f6c732762ff"
-  integrity sha512-GoRHxkuW4u4yKw734B9SzxJwVdyEJosaZ62P7ifOwcujTxhgBt3y76V2nNUrsSuopcKI2ZTDjaa+2wd5zyeXbA==
+"@next/swc-win32-arm64-msvc@12.1.0":
+  version "12.1.0"
+  resolved "https://registry.yarnpkg.com/@next/swc-win32-arm64-msvc/-/swc-win32-arm64-msvc-12.1.0.tgz#eadf054fc412085659b98e145435bbba200b5283"
+  integrity sha512-T/3gIE6QEfKIJ4dmJk75v9hhNiYZhQYAoYm4iVo1TgcsuaKLFa+zMPh4056AHiG6n9tn2UQ1CFE8EoybEsqsSw==
 
-"@next/swc-win32-arm64-msvc@12.1.4":
-  version "12.1.4"
-  resolved "https://registry.yarnpkg.com/@next/swc-win32-arm64-msvc/-/swc-win32-arm64-msvc-12.1.4.tgz#05bbaabacac23b8edf6caa99eb86b17550a09051"
-  integrity sha512-6TQkQze0ievXwHJcVUrIULwCYVe3ccX6T0JgZ1SiMeXpHxISN7VJF/O8uSCw1JvXZYZ6ud0CJ7nfC5HXivgfPg==
+"@next/swc-win32-ia32-msvc@12.1.0":
+  version "12.1.0"
+  resolved "https://registry.yarnpkg.com/@next/swc-win32-ia32-msvc/-/swc-win32-ia32-msvc-12.1.0.tgz#68faeae10c89f698bf9d28759172b74c9c21bda1"
+  integrity sha512-iwnKgHJdqhIW19H9PRPM9j55V6RdcOo6rX+5imx832BCWzkDbyomWnlzBfr6ByUYfhohb8QuH4hSGEikpPqI0Q==
 
-"@next/swc-win32-ia32-msvc@12.1.4":
-  version "12.1.4"
-  resolved "https://registry.yarnpkg.com/@next/swc-win32-ia32-msvc/-/swc-win32-ia32-msvc-12.1.4.tgz#8fd2fb48f04a2802e51fc320878bf6b411c1c866"
-  integrity sha512-CsbX/IXuZ5VSmWCpSetG2HD6VO5FTsO39WNp2IR2Ut/uom9XtLDJAZqjQEnbUTLGHuwDKFjrIO3LkhtROXLE/g==
-
-"@next/swc-win32-x64-msvc@12.1.4":
-  version "12.1.4"
-  resolved "https://registry.yarnpkg.com/@next/swc-win32-x64-msvc/-/swc-win32-x64-msvc-12.1.4.tgz#a72ed44c9b1f850986a30fe36c59e01f8a79b5f3"
-  integrity sha512-JtYuWzKXKLDMgE/xTcFtCm1MiCIRaAc5XYZfYX3n/ZWSI1SJS/GMm+Su0SAHJgRFavJh6U/p998YwO/iGTIgqQ==
+"@next/swc-win32-x64-msvc@12.1.0":
+  version "12.1.0"
+  resolved "https://registry.yarnpkg.com/@next/swc-win32-x64-msvc/-/swc-win32-x64-msvc-12.1.0.tgz#d27e7e76c87a460a4da99c5bfdb1618dcd6cd064"
+  integrity sha512-aBvcbMwuanDH4EMrL2TthNJy+4nP59Bimn8egqv6GHMVj0a44cU6Au4PjOhLNqEh9l+IpRGBqMTzec94UdC5xg==
 
 "@nodelib/fs.scandir@2.1.5":
   version "2.1.5"
@@ -1442,7 +1437,7 @@
     js-sha3 "0.8.0"
     query-string "6.13.5"
 
-"@walletconnect/web3-provider@^1.7.1", "@walletconnect/web3-provider@^1.7.7":
+"@walletconnect/web3-provider@^1.7.1", "@walletconnect/web3-provider@^1.7.5":
   version "1.7.7"
   resolved "https://registry.yarnpkg.com/@walletconnect/web3-provider/-/web3-provider-1.7.7.tgz#3d2f8d7a0fcdc118615283978c6a7c9f2a852b71"
   integrity sha512-hUhDyaMu93e7e82OVCu3KnYOn6m6wQO9YObbhi3PexppCANe/Y9eDrw/37S+7jbjLIx5nS1et2JU+taKR7OSOw==
@@ -1466,12 +1461,12 @@
   dependencies:
     "@walletconnect/window-getters" "^1.0.0"
 
-"@web3auth/base-plugin@^0.7.0":
-  version "0.7.0"
-  resolved "https://registry.yarnpkg.com/@web3auth/base-plugin/-/base-plugin-0.7.0.tgz#829026e70006f8ab117194f8a2842474581957f6"
-  integrity sha512-PcOrp3jBdtoC/R5deUu7BNNNL0vpzNU7IUOOSF+cF8WvW3eM6HqUqjCxpPeID1P3G5dneCHXez1kY/gUv9cU1A==
+"@web3auth/base-plugin@^0.6.3":
+  version "0.6.3"
+  resolved "https://registry.yarnpkg.com/@web3auth/base-plugin/-/base-plugin-0.6.3.tgz#571c8217894a531fd3ffa5aa7ec62c746924b894"
+  integrity sha512-n8Ipt4/WULSa/MRALEk+ICN++UWi3KxS+jkkl0kznZZ3Bz6S7MpjDoDiPGAlzoOBtih8oWyWX4Llf+e3vYxGMQ==
   dependencies:
-    "@web3auth/base" "^0.7.0"
+    "@web3auth/base" "^0.6.3"
 
 "@web3auth/base-provider@^0.3.1":
   version "0.3.1"
@@ -1484,14 +1479,14 @@
     eth-rpc-errors "^4.0.3"
     json-rpc-random-id "^1.0.1"
 
-"@web3auth/base-provider@^0.7.0":
-  version "0.7.0"
-  resolved "https://registry.yarnpkg.com/@web3auth/base-provider/-/base-provider-0.7.0.tgz#05684b3cf874c9a52356d6b1145117c6152f2e2c"
-  integrity sha512-uS2RmVHnsWYQ3+PIMuxsca0Xxga0oY11Enf4U6f2Iud0mFB3rD9ealCOuKUtYJC6QcoOKP6lRsOt1irJns5ICw==
+"@web3auth/base-provider@^0.6.3":
+  version "0.6.3"
+  resolved "https://registry.yarnpkg.com/@web3auth/base-provider/-/base-provider-0.6.3.tgz#5ab5d123ccd3742a16baa58a12881c5f7a167c0b"
+  integrity sha512-+9oLR4gevifnsq2PeK03sV+YhYTuu54HyS0FPBapGj77DF8TntxxnNe6/W+ucAxlzR0oJdnYkREBG4SbZVowJA==
   dependencies:
     "@toruslabs/base-controllers" "^1.6.6"
     "@toruslabs/openlogin-jrpc" "^1.6.0"
-    "@web3auth/base" "^0.7.0"
+    "@web3auth/base" "^0.6.3"
     eth-rpc-errors "^4.0.3"
     json-rpc-random-id "^1.0.1"
 
@@ -1503,10 +1498,10 @@
     "@toruslabs/openlogin-jrpc" "^1.5.0"
     ts-custom-error "^3.2.0"
 
-"@web3auth/base@^0.7.0":
-  version "0.7.0"
-  resolved "https://registry.yarnpkg.com/@web3auth/base/-/base-0.7.0.tgz#e1e434d96a26e593a86b2245c801e1a74a6b699a"
-  integrity sha512-n0mRwScbJI9tUvQsyWKtRuraFhidHwqcTWWd8eAa8mEQfepfPRUsDwUx8lcGsQZ20B59gbPhd9J14klVKqcXLA==
+"@web3auth/base@^0.6.3":
+  version "0.6.3"
+  resolved "https://registry.yarnpkg.com/@web3auth/base/-/base-0.6.3.tgz#d609bc676074b76d54eeba80cd9de6a9ab779e85"
+  integrity sha512-X2mpYSgkBw6EvHvS/ec3qDoyTOFqxKyQazexuFlnlCWRICxqUJw66Ewyh1j9JR2ZbJd08O6ZT1jmRBvi6UOOew==
   dependencies:
     "@toruslabs/openlogin-jrpc" "^1.6.0"
     loglevel "^1.8.0"
@@ -1521,14 +1516,14 @@
     "@web3auth/base" "^0.3.1"
     loglevel "^1.8.0"
 
-"@web3auth/core@^0.7.0":
-  version "0.7.0"
-  resolved "https://registry.yarnpkg.com/@web3auth/core/-/core-0.7.0.tgz#68fca3e5666d7251d1c93d0a68520bda25bc5331"
-  integrity sha512-UaGR95xw7HllzGI+mfeVlki1CMoP5OkA/EeLZVWuGpfzsSyMVqWXT/2iF0ll9fbFVW5DhXtrNblGc4ikdJyxHw==
+"@web3auth/core@^0.6.3":
+  version "0.6.3"
+  resolved "https://registry.yarnpkg.com/@web3auth/core/-/core-0.6.3.tgz#67e22a1f6a33761eaf4f4a5237d9f162ada4549b"
+  integrity sha512-lTKqnA3jaTaQLMNnALSexlUOREsuqJfwzLEvquaGO6N3kOZiNK59G33deUCaLdweLv4nO4m1vEZFkLKfHMqndQ==
   dependencies:
     "@toruslabs/openlogin-jrpc" "^1.6.0"
-    "@web3auth/base" "^0.7.0"
-    "@web3auth/base-plugin" "^0.7.0"
+    "@web3auth/base" "^0.6.3"
+    "@web3auth/base-plugin" "^0.6.3"
 
 "@web3auth/ethereum-provider@^0.3.1":
   version "0.3.1"
@@ -1547,10 +1542,10 @@
     ethereumjs-util "^7.1.4"
     loglevel "^1.8.0"
 
-"@web3auth/ethereum-provider@^0.7.0":
-  version "0.7.0"
-  resolved "https://registry.yarnpkg.com/@web3auth/ethereum-provider/-/ethereum-provider-0.7.0.tgz#90a9baa99989b5203e614db1ebefa2de0e4edd32"
-  integrity sha512-jWB8oyJJJGTdWOxoCYR9Usf2roglQQZWtiadUKwRl+l/gs4ikYTKfjXNEmfsMROG9ZTrbNjyJ7If4reZgsIH1g==
+"@web3auth/ethereum-provider@^0.6.3":
+  version "0.6.3"
+  resolved "https://registry.yarnpkg.com/@web3auth/ethereum-provider/-/ethereum-provider-0.6.3.tgz#4ae964adad8e3d93dd728c1c366be99c54581e51"
+  integrity sha512-UBC4+QNU+/qKLfVPkxvOEtbeETfNnk9D4DBAd8BvAeW8K2bcRycB6q5HHaaIzyXgC8VrKJRmlN/s0sEgusUBFg==
   dependencies:
     "@ethereumjs/common" "^2.6.2"
     "@ethereumjs/tx" "^3.5.0"
@@ -1559,8 +1554,8 @@
     "@toruslabs/http-helpers" "^2.2.0"
     "@toruslabs/openlogin-jrpc" "^1.6.0"
     "@walletconnect/types" "~1.7.4"
-    "@web3auth/base" "^0.7.0"
-    "@web3auth/base-provider" "^0.7.0"
+    "@web3auth/base" "^0.6.3"
+    "@web3auth/base-provider" "^0.6.3"
     bignumber.js "^9.0.2"
     eth-rpc-errors "^4.0.3"
     ethereumjs-util "^7.1.4"
@@ -1574,13 +1569,13 @@
     "@web3auth/base" "^0.3.1"
     loglevel "^1.8.0"
 
-"@web3auth/metamask-adapter@^0.7.0":
-  version "0.7.0"
-  resolved "https://registry.yarnpkg.com/@web3auth/metamask-adapter/-/metamask-adapter-0.7.0.tgz#b29cd04dad93c23b6d4b92beb355fce995333426"
-  integrity sha512-4wcZuwdbW4y7P8RZ3Mdw27EH5VhJ0R7t0EgNNaf9JcfzRlQkVaxtmV2B9JJi3h7axL4w+BHWu7XImKFcqF8hrQ==
+"@web3auth/metamask-adapter@^0.6.3":
+  version "0.6.3"
+  resolved "https://registry.yarnpkg.com/@web3auth/metamask-adapter/-/metamask-adapter-0.6.3.tgz#39b8f8c12a77381b1527df1d876147adc2eba75d"
+  integrity sha512-kTZJPG4scrgq4YJD3i3ipMr78vH8MbJp6tjptZP2iSuuouc3wVpFmBOXml0NHg8vHwsBkLfEfO2lKYtdyNi7Iw==
   dependencies:
     "@metamask/detect-provider" "^1.2.0"
-    "@web3auth/base" "^0.7.0"
+    "@web3auth/base" "^0.6.3"
 
 "@web3auth/openlogin-adapter@^0.3.1":
   version "0.3.1"
@@ -1596,17 +1591,17 @@
     lodash.merge "^4.6.2"
     loglevel "^1.8.0"
 
-"@web3auth/openlogin-adapter@^0.7.0":
-  version "0.7.0"
-  resolved "https://registry.yarnpkg.com/@web3auth/openlogin-adapter/-/openlogin-adapter-0.7.0.tgz#9a3fea7bd5bad82826e050edb50c8df553f984a5"
-  integrity sha512-C5VRByC6fAi7Zr2n+rfKYHThV6pNifBElkP/ZUG8tBqJGvuo9+FmAT6D2R7ArRVnY0ardk/l/0hE/yidsKl9yw==
+"@web3auth/openlogin-adapter@^0.6.3":
+  version "0.6.3"
+  resolved "https://registry.yarnpkg.com/@web3auth/openlogin-adapter/-/openlogin-adapter-0.6.3.tgz#b22395b09dc5119254f943d87feb52cbcf629617"
+  integrity sha512-sm1kSVv4FMkrdfmtOFtwXJvbuX7PMdFGLMXeOEk+DRvRekt5Op1D+0Fsnkyendb0BAF1AuHToWppBw7M2juZVQ==
   dependencies:
     "@toruslabs/openlogin" "^1.6.0"
     "@toruslabs/openlogin-ed25519" "^1.6.0"
-    "@web3auth/base" "^0.7.0"
-    "@web3auth/base-provider" "^0.7.0"
-    "@web3auth/ethereum-provider" "^0.7.0"
-    "@web3auth/solana-provider" "^0.7.0"
+    "@web3auth/base" "^0.6.3"
+    "@web3auth/base-provider" "^0.6.3"
+    "@web3auth/ethereum-provider" "^0.6.3"
+    "@web3auth/solana-provider" "^0.6.3"
     lodash.merge "^4.6.2"
 
 "@web3auth/phantom-adapter@^0.3.1":
@@ -1620,14 +1615,14 @@
     bn.js "^5.2.0"
     loglevel "^1.8.0"
 
-"@web3auth/phantom-adapter@^0.7.0":
-  version "0.7.0"
-  resolved "https://registry.yarnpkg.com/@web3auth/phantom-adapter/-/phantom-adapter-0.7.0.tgz#da31f2ed62c193e4324566c4b8098d3937a904c6"
-  integrity sha512-F0vQxQoNUTDCxMGAjmA67fH0whG2kLT0yJ2WyPNpLe38YTMoec0k10kTN3EY9EdegkXp4j3xu0sD7hK+utKHhA==
+"@web3auth/phantom-adapter@^0.6.3":
+  version "0.6.3"
+  resolved "https://registry.yarnpkg.com/@web3auth/phantom-adapter/-/phantom-adapter-0.6.3.tgz#c7520de58e1872d4ed8b66c8b876cd8753876838"
+  integrity sha512-SIV9cvczbA5+fIvFxbp1dNFRT2b+F1zLKpZWOokqSd6ZOnP24fffy0HmIdr2OgaJCuYr4J9oUsjctM1AWrAukw==
   dependencies:
-    "@web3auth/base" "^0.7.0"
-    "@web3auth/base-provider" "^0.7.0"
-    "@web3auth/solana-provider" "^0.7.0"
+    "@web3auth/base" "^0.6.3"
+    "@web3auth/base-provider" "^0.6.3"
+    "@web3auth/solana-provider" "^0.6.3"
     bn.js "^5.2.0"
 
 "@web3auth/solana-provider@^0.3.1":
@@ -1647,17 +1642,17 @@
     json-rpc-random-id "^1.0.1"
     loglevel "^1.8.0"
 
-"@web3auth/solana-provider@^0.7.0":
-  version "0.7.0"
-  resolved "https://registry.yarnpkg.com/@web3auth/solana-provider/-/solana-provider-0.7.0.tgz#c436e648b9da5c1e419d2b5c7394db4644c8c4e8"
-  integrity sha512-yWtlAPQtOO5eFYk7Hz0n6DLoboxbZqHLSQkgfswE0r9LslE2uWiY8h8dN7TjxZLx+SH1PR/E4Z0FrJAgc3eMvQ==
+"@web3auth/solana-provider@^0.6.3":
+  version "0.6.3"
+  resolved "https://registry.yarnpkg.com/@web3auth/solana-provider/-/solana-provider-0.6.3.tgz#a5a67d81515c3b68ea390ecc81441a72cff01976"
+  integrity sha512-oq+SoYDiaAj0FZ6N/LdEWQ+CAdZ5eFpp7LORPHo8IhGjflcuvfryrS349grTkXwDD1yLVz+tFgvXoDOYkbhRSQ==
   dependencies:
     "@solana/web3.js" "^1.36.0"
     "@toruslabs/base-controllers" "^1.6.6"
     "@toruslabs/openlogin-jrpc" "^1.6.0"
     "@toruslabs/tweetnacl-js" "^1.0.3"
-    "@web3auth/base" "^0.7.0"
-    "@web3auth/base-provider" "^0.7.0"
+    "@web3auth/base" "^0.6.3"
+    "@web3auth/base-provider" "^0.6.3"
     bn.js "^5.2.0"
     bs58 "^4.0.1"
     eth-rpc-errors "^4.0.3"
@@ -1672,13 +1667,13 @@
     "@web3auth/base" "^0.3.1"
     loglevel "^1.8.0"
 
-"@web3auth/torus-evm-adapter@^0.7.0":
-  version "0.7.0"
-  resolved "https://registry.yarnpkg.com/@web3auth/torus-evm-adapter/-/torus-evm-adapter-0.7.0.tgz#eddc3df76985557e7990f8d19539ec4e5e652a8d"
-  integrity sha512-yJ3maYxmbBajCtFTL5h5eyBG5IhKTEihGzouVj1KND5F2F+di6Kq37wmZBDzlEE64hsESGvo7voRkvpEeV6uDg==
+"@web3auth/torus-evm-adapter@^0.6.3":
+  version "0.6.3"
+  resolved "https://registry.yarnpkg.com/@web3auth/torus-evm-adapter/-/torus-evm-adapter-0.6.3.tgz#6376f8cf136176d615273237101990f61c1fd8f0"
+  integrity sha512-W+zaL3fu38xhl8mccTPqa1sz1zJnrfempZg1TSRSxf9rQ94GACiSk5DPJJXUzYTTnrp+HAOn4aw9k6vJ9O4sZw==
   dependencies:
     "@toruslabs/torus-embed" "^1.20.4"
-    "@web3auth/base" "^0.7.0"
+    "@web3auth/base" "^0.6.3"
 
 "@web3auth/torus-solana-adapter@^0.3.1":
   version "0.3.1"
@@ -1691,15 +1686,15 @@
     "@web3auth/solana-provider" "^0.3.1"
     loglevel "^1.8.0"
 
-"@web3auth/torus-solana-adapter@^0.7.0":
-  version "0.7.0"
-  resolved "https://registry.yarnpkg.com/@web3auth/torus-solana-adapter/-/torus-solana-adapter-0.7.0.tgz#8c90c44decde13782507b5843d7e663ec2e9d609"
-  integrity sha512-hchWFA49XiBexq3GMgpFt9nJwLlcZ+AVfvqC4v7fISqI1qmJj0wXfl9vUJ5YrUPwA9t5NGQO30rXb8tqsnBY1w==
+"@web3auth/torus-solana-adapter@^0.6.3":
+  version "0.6.3"
+  resolved "https://registry.yarnpkg.com/@web3auth/torus-solana-adapter/-/torus-solana-adapter-0.6.3.tgz#85ad4b1494c0bf23fe7ad3c6ec3bb22ec449f2e2"
+  integrity sha512-JfuiSY7dRcXqD///ZM8m6120tvDZI7PyPnMPEuo2BTMCNB/U5748PZP+QjfPjFQX6D3SiokLU0ZFEknR/moHhw==
   dependencies:
     "@toruslabs/solana-embed" "^0.1.5"
-    "@web3auth/base" "^0.7.0"
-    "@web3auth/base-provider" "^0.7.0"
-    "@web3auth/solana-provider" "^0.7.0"
+    "@web3auth/base" "^0.6.3"
+    "@web3auth/base-provider" "^0.6.3"
+    "@web3auth/solana-provider" "^0.6.3"
 
 "@web3auth/ui@^0.3.3":
   version "0.3.3"
@@ -1716,15 +1711,14 @@
     react-dom "^17.0.2"
     react-qr-code "^2.0.3"
 
-"@web3auth/ui@^0.7.0":
-  version "0.7.0"
-  resolved "https://registry.yarnpkg.com/@web3auth/ui/-/ui-0.7.0.tgz#46db4cbc1d6323ed578a4934827772abf4788528"
-  integrity sha512-uoi+STjmfbLTvMJ99CEbM1ltmtG1zgciexxL8XyUtHewrQu/HgYy3NMG1GjXtbKJG8SRxTXaO/a2Qm2Fwgp/ZA==
+"@web3auth/ui@^0.6.3":
+  version "0.6.3"
+  resolved "https://registry.yarnpkg.com/@web3auth/ui/-/ui-0.6.3.tgz#1912d5068dbdf20b06c583f9840e55c0ba5a8305"
+  integrity sha512-dNWsi9cfcChQXCd6/xy4SKYed6WASNmgTaI7MmDOsDUkTRqprktnXeO//LLyGTF5kct2OPZUiNwz9FqlATV1ng==
   dependencies:
     "@toruslabs/openlogin" "^1.6.0"
     "@toruslabs/openlogin-jrpc" "^1.6.0"
-    "@web3auth/base" "^0.7.0"
-    bowser "^2.11.0"
+    "@web3auth/base" "^0.6.3"
     classnames "^2.3.1"
     lodash.clonedeep "^4.5.0"
     lodash.merge "^4.6.2"
@@ -1743,15 +1737,15 @@
     "@web3auth/ethereum-provider" "^0.3.1"
     loglevel "^1.8.0"
 
-"@web3auth/wallet-connect-v1-adapter@^0.7.0":
-  version "0.7.0"
-  resolved "https://registry.yarnpkg.com/@web3auth/wallet-connect-v1-adapter/-/wallet-connect-v1-adapter-0.7.0.tgz#2f1365c413aa91aa77efaa1c7736b7caef1f7c37"
-  integrity sha512-hgIszR4apDUKC9QIUfDoAcJO/rxjs7/DVn8yfYquZEaIuGW8Tq0j4Au1Q1b1vo6fHFUGxQZfdXRy3YUseMN4fQ==
+"@web3auth/wallet-connect-v1-adapter@^0.6.3":
+  version "0.6.3"
+  resolved "https://registry.yarnpkg.com/@web3auth/wallet-connect-v1-adapter/-/wallet-connect-v1-adapter-0.6.3.tgz#8ca3f6c3448cbdf4f7bde726e8097d2a21b54b76"
+  integrity sha512-0eHbnyBTFSa9jXw6x2EZPuyVuLt2a59oRrI9LxtHdVnltw5J9RrQdUjhwjP2kLo88KIOcwB565559MG3LAunog==
   dependencies:
     "@walletconnect/client" "~1.7.4"
     "@walletconnect/types" "~1.7.4"
-    "@web3auth/base" "^0.7.0"
-    "@web3auth/ethereum-provider" "^0.7.0"
+    "@web3auth/base" "^0.6.3"
+    "@web3auth/ethereum-provider" "^0.6.3"
 
 "@web3auth/web3auth@^0.3.2":
   version "0.3.3"
@@ -1770,20 +1764,20 @@
     "@web3auth/wallet-connect-v1-adapter" "^0.3.1"
     loglevel "^1.8.0"
 
-"@web3auth/web3auth@^0.7.0":
-  version "0.7.0"
-  resolved "https://registry.yarnpkg.com/@web3auth/web3auth/-/web3auth-0.7.0.tgz#a128e3aa69d8d19e5b6d5795953f23d2bf8ab8ac"
-  integrity sha512-yL6F50UKa+R/t2UlMq79bEj5iSSVz4xW+v+mZ8b0iHh2dkM0XHoLEkd+IggM2lkuquYxKoPiPpAVjA25p9p9Ng==
+"@web3auth/web3auth@^0.6.2":
+  version "0.6.3"
+  resolved "https://registry.yarnpkg.com/@web3auth/web3auth/-/web3auth-0.6.3.tgz#106e75638c1b8f8df2566a72f05a248f0ee3727f"
+  integrity sha512-DEZaKZQdX1KTEAZ/mcuVdVo7f82zEX2L1GD/rPAQx+t7HZviGoVRWY/HTakav+DUY4jlwKabx+L4jK7s20fwmA==
   dependencies:
-    "@web3auth/base" "^0.7.0"
-    "@web3auth/core" "^0.7.0"
-    "@web3auth/metamask-adapter" "^0.7.0"
-    "@web3auth/openlogin-adapter" "^0.7.0"
-    "@web3auth/phantom-adapter" "^0.7.0"
-    "@web3auth/torus-evm-adapter" "^0.7.0"
-    "@web3auth/torus-solana-adapter" "^0.7.0"
-    "@web3auth/ui" "^0.7.0"
-    "@web3auth/wallet-connect-v1-adapter" "^0.7.0"
+    "@web3auth/base" "^0.6.3"
+    "@web3auth/core" "^0.6.3"
+    "@web3auth/metamask-adapter" "^0.6.3"
+    "@web3auth/openlogin-adapter" "^0.6.3"
+    "@web3auth/phantom-adapter" "^0.6.3"
+    "@web3auth/torus-evm-adapter" "^0.6.3"
+    "@web3auth/torus-solana-adapter" "^0.6.3"
+    "@web3auth/ui" "^0.6.3"
+    "@web3auth/wallet-connect-v1-adapter" "^0.6.3"
 
 JSONStream@^1.3.5:
   version "1.3.5"
@@ -3476,7 +3470,7 @@ ethers@5.6.0:
     "@ethersproject/web" "5.6.0"
     "@ethersproject/wordlists" "5.6.0"
 
-ethers@^5.6.2:
+ethers@^5.6.1:
   version "5.6.2"
   resolved "https://registry.yarnpkg.com/ethers/-/ethers-5.6.2.tgz#e75bac7f038c5e0fdde667dba62fc223924143a2"
   integrity sha512-EzGCbns24/Yluu7+ToWnMca3SXJ1Jk1BvWB7CCmVNxyOeM4LLvw2OLuIHhlkhQk1dtOcj9UMsdkxUh8RiG1dxQ==
@@ -4623,7 +4617,7 @@ moment@^2.29.1:
   resolved "https://registry.yarnpkg.com/moment/-/moment-2.29.1.tgz#b2be769fa31940be9eeea6469c075e35006fa3d3"
   integrity sha512-kHmoybcPV8Sqy59DwNDY3Jefr64lK/by/da0ViFcuA4DH0vQg5Q6Ze5VimxkfQNSC+Mls/Kx53s7TjP1RhFEDQ==
 
-moralis@^1.3.2, moralis@^1.5.8:
+moralis@^1.3.2, moralis@^1.5.5:
   version "1.5.8"
   resolved "https://registry.yarnpkg.com/moralis/-/moralis-1.5.8.tgz#5bf0bd8b4bba6964ce29f847f63ef255733a6486"
   integrity sha512-fShSFaSphFzXH1yRk+vSxO6QBfgL4h33l0Vl+a401PquqWeFbxDqnkNPxKkdvMEFANYp3eLNPto4Zb684wohcQ==
@@ -4682,28 +4676,28 @@ next-tick@^1.1.0:
   resolved "https://registry.yarnpkg.com/next-tick/-/next-tick-1.1.0.tgz#1836ee30ad56d67ef281b22bd199f709449b35eb"
   integrity sha512-CXdUiJembsNjuToQvxayPZF9Vqht7hewsvy2sOWafLvi2awflj9mOC6bHIg50orX8IJvWKY9wYQ/zB2kogPslQ==
 
-next@12.1.4:
-  version "12.1.4"
-  resolved "https://registry.yarnpkg.com/next/-/next-12.1.4.tgz#597a9bdec7aec778b442c4f6d41afd2c64a54b23"
-  integrity sha512-DA4g97BM4Z0nKtDvCTm58RxdvoQyYzeg0AeVbh0N4Y/D8ELrNu47lQeEgRGF8hV4eQ+Sal90zxrJQQG/mPQ8CQ==
+next@12.1.0:
+  version "12.1.0"
+  resolved "https://registry.yarnpkg.com/next/-/next-12.1.0.tgz#c33d753b644be92fc58e06e5a214f143da61dd5d"
+  integrity sha512-s885kWvnIlxsUFHq9UGyIyLiuD0G3BUC/xrH0CEnH5lHEWkwQcHOORgbDF0hbrW9vr/7am4ETfX4A7M6DjrE7Q==
   dependencies:
-    "@next/env" "12.1.4"
+    "@next/env" "12.1.0"
     caniuse-lite "^1.0.30001283"
     postcss "8.4.5"
-    styled-jsx "5.0.1"
+    styled-jsx "5.0.0"
+    use-subscription "1.5.1"
   optionalDependencies:
-    "@next/swc-android-arm-eabi" "12.1.4"
-    "@next/swc-android-arm64" "12.1.4"
-    "@next/swc-darwin-arm64" "12.1.4"
-    "@next/swc-darwin-x64" "12.1.4"
-    "@next/swc-linux-arm-gnueabihf" "12.1.4"
-    "@next/swc-linux-arm64-gnu" "12.1.4"
-    "@next/swc-linux-arm64-musl" "12.1.4"
-    "@next/swc-linux-x64-gnu" "12.1.4"
-    "@next/swc-linux-x64-musl" "12.1.4"
-    "@next/swc-win32-arm64-msvc" "12.1.4"
-    "@next/swc-win32-ia32-msvc" "12.1.4"
-    "@next/swc-win32-x64-msvc" "12.1.4"
+    "@next/swc-android-arm64" "12.1.0"
+    "@next/swc-darwin-arm64" "12.1.0"
+    "@next/swc-darwin-x64" "12.1.0"
+    "@next/swc-linux-arm-gnueabihf" "12.1.0"
+    "@next/swc-linux-arm64-gnu" "12.1.0"
+    "@next/swc-linux-arm64-musl" "12.1.0"
+    "@next/swc-linux-x64-gnu" "12.1.0"
+    "@next/swc-linux-x64-musl" "12.1.0"
+    "@next/swc-win32-arm64-msvc" "12.1.0"
+    "@next/swc-win32-ia32-msvc" "12.1.0"
+    "@next/swc-win32-x64-msvc" "12.1.0"
 
 node-addon-api@^2.0.0:
   version "2.0.2"
@@ -5197,15 +5191,7 @@ react-blockies@^1.4.1:
   dependencies:
     prop-types "^15.5.10"
 
-react-dom@18.0.0:
-  version "18.0.0"
-  resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-18.0.0.tgz#26b88534f8f1dbb80853e1eabe752f24100d8023"
-  integrity sha512-XqX7uzmFo0pUceWFCt7Gff6IyIMzFUn7QMZrbrQfGxtaxXZIcGQzoNpRLE3fQLnS4XzLLPMZX2T9TRcSrasicw==
-  dependencies:
-    loose-envify "^1.1.0"
-    scheduler "^0.21.0"
-
-react-dom@^17.0.2:
+react-dom@17.0.2, react-dom@^17.0.2:
   version "17.0.2"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-17.0.2.tgz#ecffb6845e3ad8dbfcdc498f0d0a939736502c23"
   integrity sha512-s4h96KtLDUQlsENhMn1ar8t2bEa+q/YAtj8pPPdIjPDGBDIVNsrD9aXNWqspUe6AzKCIG0C1HZZLqLV7qpOBGA==
@@ -5224,7 +5210,7 @@ react-is@^16.13.1, react-is@^16.7.0:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
   integrity sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
 
-react-moralis@^1.3.1, react-moralis@^1.3.5:
+react-moralis@^1.3.1, react-moralis@^1.3.4:
   version "1.3.5"
   resolved "https://registry.yarnpkg.com/react-moralis/-/react-moralis-1.3.5.tgz#d811e8c7e16d6ff3988fc2115a6bcce7e85263bd"
   integrity sha512-Z78gjQStR301biEzfJe4MZYGqWZh3bk8hfBzguobWM/98MR7DEBiCCWEEeUqkphc2zkCzo9mKRGV/YTdTdD/vg==
@@ -5284,14 +5270,7 @@ react-spring@^8.0.27:
     "@babel/runtime" "^7.3.1"
     prop-types "^15.5.8"
 
-react@18.0.0:
-  version "18.0.0"
-  resolved "https://registry.yarnpkg.com/react/-/react-18.0.0.tgz#b468736d1f4a5891f38585ba8e8fb29f91c3cb96"
-  integrity sha512-x+VL6wbT4JRVPm7EGxXhZ8w8LTROaxPXOqhlGyVSrv0sB1jkyFGgXxJ8LVoPRLvPR6/CIZGFmfzqUa2NYeMr2A==
-  dependencies:
-    loose-envify "^1.1.0"
-
-react@^17.0.2:
+react@17.0.2, react@^17.0.2:
   version "17.0.2"
   resolved "https://registry.yarnpkg.com/react/-/react-17.0.2.tgz#d0b5cc516d29eb3eee383f75b62864cfb6800037"
   integrity sha512-gnhPt75i/dq/z3/6q/0asP78D0u592D5L1pd7M8P+dck6Fu/jJeL6iVVK23fptSUZj8Vjf++7wXA8UNclGQcbA==
@@ -5511,13 +5490,6 @@ scheduler@^0.20.2:
   dependencies:
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
-
-scheduler@^0.21.0:
-  version "0.21.0"
-  resolved "https://registry.yarnpkg.com/scheduler/-/scheduler-0.21.0.tgz#6fd2532ff5a6d877b6edb12f00d8ab7e8f308820"
-  integrity sha512-1r87x5fz9MXqswA2ERLo0EbOAU74DpIUO090gIasYTqlVoJeMcl+Z1Rg7WHz+qtPujhS/hGIt9kxZOYBV3faRQ==
-  dependencies:
-    loose-envify "^1.1.0"
 
 scrypt-js@3.0.1, scrypt-js@^3.0.0:
   version "3.0.1"
@@ -5787,10 +5759,10 @@ styled-components@^5.3.3:
     shallowequal "^1.1.0"
     supports-color "^5.5.0"
 
-styled-jsx@5.0.1:
-  version "5.0.1"
-  resolved "https://registry.yarnpkg.com/styled-jsx/-/styled-jsx-5.0.1.tgz#78fecbbad2bf95ce6cd981a08918ce4696f5fc80"
-  integrity sha512-+PIZ/6Uk40mphiQJJI1202b+/dYeTVd9ZnMPR80pgiWbjIwvN2zIp4r9et0BgqBuShh48I0gttPlAXA7WVvBxw==
+styled-jsx@5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/styled-jsx/-/styled-jsx-5.0.0.tgz#816b4b92e07b1786c6b7111821750e0ba4d26e77"
+  integrity sha512-qUqsWoBquEdERe10EW8vLp3jT25s/ssG1/qX5gZ4wu15OZpmSMFI2v+fWlRhLfykA5rFtlJ1ME8A8pm/peV4WA==
 
 stylis@4.0.13:
   version "4.0.13"
@@ -6028,6 +6000,13 @@ use-immer@^0.6.0:
   version "0.6.0"
   resolved "https://registry.yarnpkg.com/use-immer/-/use-immer-0.6.0.tgz#ca6aa5ade93018e2c65cf128d19ada54fc23f70d"
   integrity sha512-dFGRfvWCqPDTOt/S431ETYTg6+uxbpb7A1pptufwXVzGJY3RlXr38+3wyLNpc6SbbmAKjWl6+EP6uW74fkEsXQ==
+
+use-subscription@1.5.1:
+  version "1.5.1"
+  resolved "https://registry.yarnpkg.com/use-subscription/-/use-subscription-1.5.1.tgz#73501107f02fad84c6dd57965beb0b75c68c42d1"
+  integrity sha512-Xv2a1P/yReAjAbhylMfFplFKj9GssgTwN7RlcTxBujFQcloStWNDQdc4g4NRWH9xS4i/FDk04vQBptAXoF3VcA==
+  dependencies:
+    object-assign "^4.1.1"
 
 utf-8-validate@^5.0.2:
   version "5.0.9"
@@ -6341,7 +6320,7 @@ web3-utils@1.7.1, web3-utils@^1.7.0:
     randombytes "^2.1.0"
     utf8 "3.0.0"
 
-web3uikit@^0.1.112:
+web3uikit@^0.1.110:
   version "0.1.112"
   resolved "https://registry.yarnpkg.com/web3uikit/-/web3uikit-0.1.112.tgz#b758838539fa597b02e22ce68cdc080aefcaf39c"
   integrity sha512-1TcDSyLhlvZMx5jzA5V/nEt4NGTLh6NnKFhyC756Y2UZzgIVKjbED8WaXcRnqHQvozpxX0BwWz8iJWRfZ0Rfbw==
