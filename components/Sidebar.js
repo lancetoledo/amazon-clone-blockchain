@@ -1,6 +1,6 @@
-// 
+//
 
-import React, { useContext } from 'react'
+import React, { useContext, useEffect } from 'react'
 import logo from '../assets/amazon_logo.png'
 import logoFull from '../assets/amazon_logo_full.png'
 import Image from 'next/image'
@@ -38,7 +38,11 @@ const Sidebar = () => {
     username,
     handleSetUsername,
   } = useContext(AmazonContext)
-  console.log(isAuthenticated)
+
+  useEffect(() => {
+    console.log('isAuthenticated', isAuthenticated)
+  }, [isAuthenticated])
+
   return (
     <div className={styles.container}>
       <div className={styles.profile}>
