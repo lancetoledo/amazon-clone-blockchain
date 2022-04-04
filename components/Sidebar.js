@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import React from 'react'
+import React, { useContext } from 'react'
 import { ConnectButton } from 'web3uikit'
 import Link from 'next/link'
 import logo from '../assets/amazon_logo.png'
@@ -8,9 +8,10 @@ import { FaBox } from 'react-icons/fa'
 import { BsFillBookmarkFill } from 'react-icons/bs'
 import { BsFillPersonFill } from 'react-icons/bs'
 import { AiOutlineHistory } from 'react-icons/ai'
+import { AmazonContext } from '../context/AmazonContext'
 
-const isAuthenticated = true
-const username = 'Lance'
+// const isAuthenticated = true
+// const username = ''
 const Sidebar = () => {
     const styles = {
         container: `h-full w-[300px] flex flex-col bg-[#fff] static`,
@@ -27,9 +28,18 @@ const Sidebar = () => {
         companyName: `text-lg font-bold flex flex-1 pl-10 items-center mt-[20px]`,
     }
 
-
+    const {
+        isAuthenticated,
+        nickname,
+        setNickname,
+        username,
+        handleSetUsername,
+        connectWallet,
+    } = useContext(AmazonContext)
+console.log(isAuthenticated)
   return (
     <div className={styles.container}>
+        <div onClick={connectWallet}>CONNECT TEST</div>
         <div className={styles.profile}>
             {
                 isAuthenticated && (
@@ -50,13 +60,13 @@ const Sidebar = () => {
                                 type = 'text'
                                 placeholder='Username...'
                                 className={styles.usernameInput}
-                                // value ={nickname}
-                                // onChange ={e => setNickname(e.target.value)}
+                                value ={nickname}
+                                onChange ={e => setNickname(e.target.value)}
                                 />
                             </div>
                             <button
                             className={styles.setNickname}
-                            // onClick = {handleSetUsername}
+                            onClick = {handleSetUsername}
                             >
                             Set Nickname
                             </button>
