@@ -28,7 +28,7 @@ const Sidebar = () => {
     username: `flex items-center w-full justify-center`,
     setNickname: `text-lg font-bold flex flex-1 items-center mt-[20px] mb-[20px] text-white`,
   }
-
+ 
   const {
     isAuthenticated,
     buyTokens,
