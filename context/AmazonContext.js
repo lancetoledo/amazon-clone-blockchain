@@ -17,7 +17,6 @@ export const AmazonProvider = ({ children }) => {
   const [balance, setBalance] = useState('')
   const [recentTransactions, setRecentTransactions] = useState([])
 
-
   const {
     authenticate,
     isAuthenticated,
@@ -36,55 +35,59 @@ export const AmazonProvider = ({ children }) => {
   const {
     data: userData,
     error: userDataError,
-    isLoading: userDataisLoading
+    isLoading: userDataisLoading,
   } = useMoralisQuery('_User')
 
   const listenToUpdates = async () => {
+    await enableWeb3()
     let query = new Moralis.Query('EthTransactions')
-    console.log("LISTENING")
+    console.log('LISTENING')
+
     let subscription = await query.subscribe()
     
     subscription.on('update', async object => {
       console.log('New Transction')
-      console.log(object)
+      console.log('🐛🐛🐛🐛', object)
       setRecentTransactions([object])
+      console.log(recentTransactions)
     })
   }
 
   const getBalance = async () => {
     try {
-      if(!isAuthenticated || !currentAccount) return
+      if (!isAuthenticated || !currentAccount) return
 
       const options = {
         contractAddress: amazonCoinAddress,
         functionName: 'balanceOf',
         abi: amazonAbi,
         params: {
-          account: currentAccount
+          account: currentAccount,
         },
       }
 
-      if(isWeb3Enabled) {
+      if (isWeb3Enabled) {
         const response = await Moralis.executeFunction(options)
         setBalance(response.toString())
       }
-    } catch(error) {
+    } catch (error) {
       console.log(error)
     }
   }
 
-  useEffect(()=>{
-    ;(async() => {
-      if(isAuthenticated) {
+  useEffect(() => {
+    ;(async () => {
+      if (isAuthenticated) {
         await getBalance()
-        await listenToUpdates()
+
         const currentUsername = await user?.get('nickname')
         setUsername(currentUsername)
         const account = await user?.get('ethAddress')
         setCurrentAccount(account)
+        await listenToUpdates()
       }
     })()
-  }, [isAuthenticated, user, username,currentAccount,getBalance,listenToUpdates])
+  }, [isAuthenticated, user, username, currentAccount])
 
   useEffect(() => {
     ;(async () => {
@@ -110,31 +113,30 @@ export const AmazonProvider = ({ children }) => {
 
   const buyAsset = async (price, asset) => {
     try {
-      if(!isAuthenticated) return
+      if (!isAuthenticated) return
 
       const options = {
         type: 'erc20',
         amount: price,
         receiver: amazonCoinAddress,
-        contractAddress: amazonCoinAddress
+        contractAddress: amazonCoinAddress,
       }
-      
+
       let transaction = await Moralis.transfer(options)
       const receipt = await transaction.wait()
-      console.log("RUNNING", receipt)
-      if(receipt) {
-        console.log("WAITING FOR RECEIPT")
+      console.log('RUNNING', receipt)
+      if (receipt) {
+        console.log('WAITING FOR RECEIPT')
         const res = userData[0].add('ownedAssets', {
           ...asset,
           purchaseDate: Date.now(),
-          etherscanLink: `https://rinkeby.etherscan.io/tx/${receipt.transactionHash}`
+          etherscanLink: `https://rinkeby.etherscan.io/tx/${receipt.transactionHash}`,
         })
-        await res.save().then(()=>{
+        await res.save().then(() => {
           alert("You've successfully purchased this asset!")
         })
       }
-
-    } catch(error) {
+    } catch (error) {
       console.log(error)
     }
   }
@@ -170,8 +172,6 @@ export const AmazonProvider = ({ children }) => {
     )
   }
 
-
-
   const getAssets = async () => {
     try {
       await enableWeb3()
@@ -181,31 +181,31 @@ export const AmazonProvider = ({ children }) => {
     }
   }
 
-    return (
-        <AmazonContext.Provider
-          value={{
-            isAuthenticated,
-            nickname,
-            setNickname,
-            username,
-            handleSetUsername,
-            assets,
-            balance,
-            setTokenAmount,
-            tokenAmount,
-            amountDue,
-            setAmountDue,
-            isLoading,
-            setIsLoading,
-            setEtherscanLink,
-            etherscanLink,
-            currentAccount,
-            buyTokens,
-            buyAsset,
-            recentTransactions
-          }}
-        >
-          {children}
-        </AmazonContext.Provider>
-      )
+  return (
+    <AmazonContext.Provider
+      value={{
+        isAuthenticated,
+        nickname,
+        setNickname,
+        username,
+        handleSetUsername,
+        assets,
+        balance,
+        setTokenAmount,
+        tokenAmount,
+        amountDue,
+        setAmountDue,
+        isLoading,
+        setIsLoading,
+        setEtherscanLink,
+        etherscanLink,
+        currentAccount,
+        buyTokens,
+        buyAsset,
+        recentTransactions,
+      }}
+    >
+      {children}
+    </AmazonContext.Provider>
+  )
 }
