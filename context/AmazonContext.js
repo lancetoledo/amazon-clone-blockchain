@@ -1,7 +1,7 @@
 import { createContext, useState, useEffect } from 'react'
 import { useMoralis, useMoralisQuery } from 'react-moralis'
 import { amazonAbi, amazonCoinAddress } from '../lib/constants'
-import {ethers} from 'ethers'
+import { ethers } from 'ethers'
 
 export const AmazonContext = createContext()
 
@@ -85,18 +85,18 @@ export const AmazonProvider = ({ children }) => {
     })()
   }, [isAuthenticated, user, username,currentAccount,getBalance,listenToUpdates])
 
-  useEffect(()=> {
-    ;(async()=> {
-      if(isWeb3Enabled) {
+  useEffect(() => {
+    ;(async () => {
+      if (isWeb3Enabled) {
         await getAssets()
       }
     })()
   }, [isWeb3Enabled, assetsData, assetsDataisLoading])
 
   const handleSetUsername = () => {
-    if(user) {
-      if(nickname) {
-        user.set('nickname',nickname)
+    if (user) {
+      if (nickname) {
+        user.set('nickname', nickname)
         user.save()
         setNickname('')
       } else {
@@ -139,7 +139,7 @@ export const AmazonProvider = ({ children }) => {
   }
 
   const buyTokens = async () => {
-    if(!isAuthenticated) {
+    if (!isAuthenticated) {
       await authenticate()
     }
 
@@ -175,7 +175,7 @@ export const AmazonProvider = ({ children }) => {
     try {
       await enableWeb3()
       setAssets(assetsData)
-    } catch(error) {
+    } catch (error) {
       console.log(error)
     }
   }
