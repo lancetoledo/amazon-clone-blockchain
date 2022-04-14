@@ -28,17 +28,16 @@ const Sidebar = () => {
     username: `flex items-center w-full justify-center`,
     setNickname: `text-lg font-bold flex flex-1 items-center mt-[20px] mb-[20px] text-white`,
   }
- 
+
   const {
     isAuthenticated,
-    buyTokens,
-    getBalance,
     nickname,
     setNickname,
     username,
     handleSetUsername,
   } = useContext(AmazonContext)
-  console.log(isAuthenticated)
+
+
   return (
     <div className={styles.container}>
       <div className={styles.profile}>
@@ -83,13 +82,14 @@ const Sidebar = () => {
         </div>
       </div>
       <div className={styles.menu}>
-        <Link href='/'>
+        <Link href='/' passHref>
           <div className={styles.menuItem}>
             <Image
               src={logo}
               height={30}
               width={30}
               className={styles.amazonLogo}
+              alt="logo"
             />
             My Amazon
             <br /> Board
