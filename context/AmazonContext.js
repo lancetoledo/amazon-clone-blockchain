@@ -73,7 +73,7 @@ export const AmazonProvider = ({ children }) => {
         await listenToUpdates()
       }
     })()
-  }, [isAuthenticated, user, username,currentAccount,getBalance])
+  }, [isAuthenticated, user, username, currentAccount, getBalance])
 
   useEffect(() => {
     ;(async () => {
@@ -162,12 +162,11 @@ export const AmazonProvider = ({ children }) => {
   const listenToUpdates = async () => {
     let query = new Moralis.Query('EthTransactions')
     let subscription = await query.subscribe()
-    
+
     subscription.on('update', async object => {
       setRecentTransactions([object])
     })
   }
-
 
   const getAssets = async () => {
     try {
@@ -183,42 +182,41 @@ export const AmazonProvider = ({ children }) => {
     
       if(userData[0].attributes.ownedAssets) {
         setOwnedItems(prevItems => [
-          ...prevItems, userData[0].attributes.ownedAssets
+          ...prevItems,
+          userData[0].attributes.ownedAssets,
         ])
-        
       }
-    } catch(error) {
+    } catch (error) {
       console.log(error)
     }
   }
 
-
-    return (
-        <AmazonContext.Provider
-          value={{
-            isAuthenticated,
-            nickname,
-            setNickname,
-            username,
-            handleSetUsername,
-            assets,
-            balance,
-            setTokenAmount,
-            tokenAmount,
-            amountDue,
-            setAmountDue,
-            isLoading,
-            setIsLoading,
-            setEtherscanLink,
-            etherscanLink,
-            currentAccount,
-            buyTokens,
-            buyAsset,
-            recentTransactions,
-            ownedItems,
-          }}
-        >
-          {children}
-        </AmazonContext.Provider>
-      )
+  return (
+    <AmazonContext.Provider
+      value={{
+        isAuthenticated,
+        nickname,
+        setNickname,
+        username,
+        handleSetUsername,
+        assets,
+        balance,
+        setTokenAmount,
+        tokenAmount,
+        amountDue,
+        setAmountDue,
+        isLoading,
+        setIsLoading,
+        setEtherscanLink,
+        etherscanLink,
+        currentAccount,
+        buyTokens,
+        buyAsset,
+        recentTransactions,
+        ownedItems,
+      }}
+    >
+      {children}
+    </AmazonContext.Provider>
+  )
 }
