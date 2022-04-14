@@ -16,7 +16,7 @@ export const AmazonProvider = ({ children }) => {
   const [isLoading, setIsLoading] = useState(false)
   const [balance, setBalance] = useState('')
   const [recentTransactions, setRecentTransactions] = useState([])
-
+  const [ownedItems, setOwnedItems] = useState([])
 
   const {
     authenticate,
@@ -38,18 +38,6 @@ export const AmazonProvider = ({ children }) => {
     error: userDataError,
     isLoading: userDataisLoading
   } = useMoralisQuery('_User')
-
-  const listenToUpdates = async () => {
-    let query = new Moralis.Query('EthTransactions')
-    console.log("LISTENING")
-    let subscription = await query.subscribe()
-    
-    subscription.on('update', async object => {
-      console.log('New Transction')
-      console.log(object)
-      setRecentTransactions([object])
-    })
-  }
 
   const getBalance = async () => {
     try {
@@ -84,11 +72,12 @@ export const AmazonProvider = ({ children }) => {
         setCurrentAccount(account)
       }
     })()
-  }, [isAuthenticated, user, username,currentAccount,getBalance,listenToUpdates])
+  }, [isAuthenticated, user, username,currentAccount,getBalance])
 
   useEffect(() => {
     ;(async () => {
       if (isWeb3Enabled) {
+        await getOwnedAssets()
         await getAssets()
       }
     })()
@@ -170,6 +159,16 @@ export const AmazonProvider = ({ children }) => {
     )
   }
 
+  const listenToUpdates = async () => {
+    let query = new Moralis.Query('EthTransactions')
+    let subscription = await query.subscribe()
+    
+    subscription.on('update', async object => {
+      console.log('New Transction')
+      console.log(object)
+      setRecentTransactions([object])
+    })
+  }
 
 
   const getAssets = async () => {
@@ -180,6 +179,21 @@ export const AmazonProvider = ({ children }) => {
       console.log(error)
     }
   }
+
+  const getOwnedAssets = async () => {
+    try {
+      console.log("RUNN",userData[0].attributes.ownedAssets)
+      if(userData[0]) {
+        setOwnedItems(prevItems => [
+          ...prevItems, userData[0].attributes.ownedAssets
+        ])
+        
+      }
+    } catch(error) {
+      console.log(error)
+    }
+  }
+
 
     return (
         <AmazonContext.Provider
@@ -202,7 +216,8 @@ export const AmazonProvider = ({ children }) => {
             currentAccount,
             buyTokens,
             buyAsset,
-            recentTransactions
+            recentTransactions,
+            ownedItems,
           }}
         >
           {children}
