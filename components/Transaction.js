@@ -4,8 +4,8 @@ import Image from 'next/image'
 import moment from 'moment'
 import { AmazonContext } from '../context/AmazonContext'
 
-const Transaction = ({item}) => {
-    console.log(item)
+const Transaction = ({ item }) => {
+  console.log('🐛🐛🐛', item)
   return (
     <>
     {item.map((asset, index)=> {
