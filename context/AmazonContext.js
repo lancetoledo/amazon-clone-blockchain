@@ -179,8 +179,7 @@ export const AmazonProvider = ({ children }) => {
 
   const getOwnedAssets = async () => {
     try {
-    
-      if(userData[0].attributes.ownedAssets) {
+      if (userData[0].attributes?.ownedAssets) {
         setOwnedItems(prevItems => [
           ...prevItems,
           userData[0].attributes.ownedAssets,

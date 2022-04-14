@@ -17,21 +17,21 @@ const history = () => {
 
   return (
     <div className={styles.container}>
-        <Sidebar />
-        <div className={styles.main}>
-            <Header />
-            <div className={styles.tableContainer}>
-                {ownedItems ? (
-                    <div className={styles.pageTitle}>Purchase History</div>
-                ) : (
-                    <div className={styles.pageTitle}>No Purchase History</div>
-                )}
-                <div className={styles.transactions}>
-                    {ownedItems && ownedItems.map((item, index)=> {
-                        return <Transaction key={index} item = {item} />
-                    })}
-                </div>
-            </div>
+      <Sidebar />
+      <div className={styles.main}>
+        <Header />
+        <div className={styles.tableContainer}>
+          {ownedItems ? (
+            <div className={styles.pageTitle}>Purchase History</div>
+          ) : (
+            <div className={styles.pageTitle}>No Purchase History</div>
+          )}
+          <div className={styles.transactions}>
+            {ownedItems &&
+              ownedItems.map((item, index) => {
+                return <Transaction key={index} item={item} />
+              })}
+          </div>
         </div>
       </div>
     </div>
