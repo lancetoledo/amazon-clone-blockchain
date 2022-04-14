@@ -34,7 +34,6 @@ const history = () => {
             </div>
         </div>
       </div>
-    </div>
   )
 }
 
