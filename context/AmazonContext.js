@@ -164,8 +164,6 @@ export const AmazonProvider = ({ children }) => {
     let subscription = await query.subscribe()
     
     subscription.on('update', async object => {
-      console.log('New Transction')
-      console.log(object)
       setRecentTransactions([object])
     })
   }
@@ -182,8 +180,8 @@ export const AmazonProvider = ({ children }) => {
 
   const getOwnedAssets = async () => {
     try {
-      console.log("RUNN",userData[0].attributes.ownedAssets)
-      if(userData[0]) {
+    
+      if(userData[0].attributes.ownedAssets) {
         setOwnedItems(prevItems => [
           ...prevItems, userData[0].attributes.ownedAssets
         ])

@@ -7,7 +7,11 @@ import { AmazonContext } from '../context/AmazonContext'
 const Transaction = ({item}) => {
     console.log(item)
   return (
-    <div>Transaction</div>
+    <>
+    {item.map((asset, index)=> {
+        return (<h1>{asset.name}</h1>)
+    })}
+    </>
   )
 }
 
