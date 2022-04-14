@@ -78,8 +78,8 @@ export const AmazonProvider = ({ children }) => {
   useEffect(() => {
     ;(async () => {
       if (isWeb3Enabled) {
-        await getOwnedAssets()
         await getAssets()
+        await getOwnedAssets()
       }
     })()
   }, [isWeb3Enabled, assetsData, assetsDataisLoading])
