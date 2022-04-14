@@ -43,6 +43,7 @@ export const AmazonProvider = ({ children }) => {
     let query = new Moralis.Query('EthTransactions')
     console.log("LISTENING")
     let subscription = await query.subscribe()
+    
     subscription.on('update', async object => {
       console.log('New Transction')
       console.log(object)

@@ -15,6 +15,16 @@ const Main = () => {
   }
   const {recentTransactions} = useContext(AmazonContext)
   console.log(recentTransactions)
+
+  // const recentTransactions = [
+  //   {
+  //     attributes: {
+  //       from_address: "Lance",
+  //       to_address: "Kevin",
+  //       hash: "6696969"
+  //     }
+  //   }
+  // ]
   return (
     <div className={styles.container}>
         <Header />
