@@ -12,9 +12,11 @@ export const AmazonProvider = ({ children }) => {
   const [currentAccount, setCurrentAccount] = useState('')
   const [tokenAmount, setTokenAmount] = useState('')
   const [amountDue, setAmountDue] = useState('')
-  const [etherscanLInk, setEtherscanLink] = useState('')
+  const [etherscanLink, setEtherscanLink] = useState('')
   const [isLoading, setIsLoading] = useState(false)
   const [balance, setBalance] = useState('')
+  const [recentTransactions, setRecentTransactions] = useState([])
+
 
   const {
     authenticate,
@@ -31,17 +33,57 @@ export const AmazonProvider = ({ children }) => {
     isLoading: assetsDataisLoading,
   } = useMoralisQuery('assets')
 
+  const {
+    data: userData,
+    error: userDataError,
+    isLoading: userDataisLoading
+  } = useMoralisQuery('_User')
+
+  const listenToUpdates = async () => {
+    let query = new Moralis.Query('EthTransactions')
+    console.log("LISTENING")
+    let subscription = await query.subscribe()
+    subscription.on('update', async object => {
+      console.log('New Transction')
+      console.log(object)
+      setRecentTransactions([object])
+    })
+  }
+
+  const getBalance = async () => {
+    try {
+      if(!isAuthenticated || !currentAccount) return
+
+      const options = {
+        contractAddress: amazonCoinAddress,
+        functionName: 'balanceOf',
+        abi: amazonAbi,
+        params: {
+          account: currentAccount
+        },
+      }
+
+      if(isWeb3Enabled) {
+        const response = await Moralis.executeFunction(options)
+        setBalance(response.toString())
+      }
+    } catch(error) {
+      console.log(error)
+    }
+  }
+
   useEffect(()=>{
     ;(async() => {
       if(isAuthenticated) {
         await getBalance()
+        await listenToUpdates()
         const currentUsername = await user?.get('nickname')
         setUsername(currentUsername)
         const account = await user?.get('ethAddress')
         setCurrentAccount(account)
       }
     })()
-  }, [isAuthenticated, user, username,currentAccount])
+  }, [isAuthenticated, user, username,currentAccount,getBalance,listenToUpdates])
 
   useEffect(()=> {
     ;(async()=> {
@@ -65,23 +107,32 @@ export const AmazonProvider = ({ children }) => {
     }
   }
 
-  const getBalance = async () => {
+  const buyAsset = async (price, asset) => {
     try {
-      if(!isAuthenticated || !currentAccount) return
+      if(!isAuthenticated) return
 
       const options = {
-        contractAddress: amazonCoinAddress,
-        functionName: 'balanceOf',
-        abi: amazonAbi,
-        params: {
-          account: currentAccount
-        },
+        type: 'erc20',
+        amount: price,
+        receiver: amazonCoinAddress,
+        contractAddress: amazonCoinAddress
+      }
+      
+      let transaction = await Moralis.transfer(options)
+      const receipt = await transaction.wait()
+      console.log("RUNNING", receipt)
+      if(receipt) {
+        console.log("WAITING FOR RECEIPT")
+        const res = userData[0].add('ownedAssets', {
+          ...asset,
+          purchaseDate: Date.now(),
+          etherscanLink: `https://rinkeby.etherscan.io/tx/${receipt.transactionHash}`
+        })
+        await res.save().then(()=>{
+          alert("You've successfully purchased this asset!")
+        })
       }
 
-      if(isWeb3Enabled) {
-        const response = await Moralis.executeFunction(options)
-        setBalance(response.toString())
-      }
     } catch(error) {
       console.log(error)
     }
@@ -114,9 +165,11 @@ export const AmazonProvider = ({ children }) => {
     setIsLoading(false)
     console.log(receipt)
     setEtherscanLink(
-      `https://rinkeby.etherscan.io/tx${receipt.transactionHash}`,
+      `https://rinkeby.etherscan.io/tx/${receipt.transactionHash}`,
     )
   }
+
+
 
   const getAssets = async () => {
     try {
@@ -144,9 +197,11 @@ export const AmazonProvider = ({ children }) => {
             isLoading,
             setIsLoading,
             setEtherscanLink,
-            etherscanLInk,
+            etherscanLink,
             currentAccount,
-            buyTokens
+            buyTokens,
+            buyAsset,
+            recentTransactions
           }}
         >
           {children}
